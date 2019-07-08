@@ -14,4 +14,9 @@ export class CategoryService {
     return this.http.get<Array<Category>>('http://localhost:8080/api/category',
       {observe: 'body'});
   }
+
+  public getById(id: string): Observable<Category> {
+    return this.http.get<Category>('http://localhost:8080/api/category/' + id,
+      {observe: 'body'});
+  }
 }

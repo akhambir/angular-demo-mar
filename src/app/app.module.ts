@@ -3,13 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CategoryComponent } from './category/category.component';
+import {HttpClientModule} from '@angular/common/http';
+import { CategoryDetailsComponent } from './category-details/category-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoryComponent,
+    CategoryDetailsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
